@@ -59,22 +59,12 @@ section {
 
 .title-slider {
     padding-right: 15px;
-    display: none;
-}
-
-.title-slider.active {
-    display: block;
 }
 
 .description-slide {
-    display: none;
     padding-left: 40px;
     padding-right: 10px;
 }
-
-.description-slide.active {
-    display: block;
-} 
 
 .button {
     display: flex;
@@ -93,14 +83,6 @@ section {
     border-radius: 99px;
     padding: 5px;
     cursor: pointer;
-}
-
-.slide-wrapper .item.active {
-    display: block;
-}
-
-.slide-wrapper .item {
-    display: none;
 }
 
 .item-slide.active {

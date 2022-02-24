@@ -17,22 +17,22 @@
 
             <div class="slide-wrapper">
 
-                <div v-for="element in carouselSlide" class="item">
-                    <img :src="element.items">
+                <div class="item">
+                    <img :src="carouselSlide[currentIndex].items">
                 </div> 
 
             </div>
             
             <div class="slide-text">
 
-                <h2 v-for="element in carouselSlide" class="title-slider">{{ element.title }}</h2>
-                <p v-for="element in carouselSlide" class="description-slide">{{ element.text }}</p>
+                <h2 class="title-slider">{{ carouselSlide[currentIndex].title }}</h2>
+                <p class="description-slide">{{ carouselSlide[currentIndex].text }}</p>
             
             </div>
 
             <div class="img-slide">
 
-                <div v-for="element in carouselSlide" class="item-slide">
+                <div v-for="( element, i ) in carouselSlide" class="item-slide" :class="i == currentIndex ? 'active' : '' ">
                     <img :src="element.items">
                 </div>
 
